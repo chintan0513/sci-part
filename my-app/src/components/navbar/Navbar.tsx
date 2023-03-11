@@ -1,4 +1,4 @@
-import Navbaritems from "./Navbaritems";
+import Navbaritems from "./NavbarItems";
 
 export default function Navbar() {
   const items = [
