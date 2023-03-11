@@ -1,10 +1,16 @@
-import Link from "next/link"
+import Link from "next/link";
 
-interface INavbarItemProps{
-    title: string,
-    route: string
+interface InavbarItemProps {
+  title: string;
+  route: string;
 }
 
-export default function Navbaritems({title, route}: INavbarItemProps) {
-    return <Link href={`/${route}`}><div className="text-white-500 font-bold hover:text-blue-400 hover:underline-offset-1">{title}</div></Link>
+export default function Navbaritems({ title, route }: InavbarItemProps) {
+  return (
+    <Link href={`${route}`} className="flex-initial w-auto py-2">
+      <div className="text-white-500 font-semibold hover:text-blue-400 hover:underline hover:font-bold">
+        {title}
+      </div>
+    </Link>
+  );
 }
